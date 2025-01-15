@@ -12,3 +12,9 @@ Define a family of algorithms, encapsulate each one, and make them interchangeab
 
 ![image](./images/strategy/structure.png)
 Link: [Strategy](./patterns/strategy/strategy.md)
+
+### 2. Observer
+Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
+![image](./images/observer/structure.png)
+Link: [Observer](./patterns/observer/observer.md)
