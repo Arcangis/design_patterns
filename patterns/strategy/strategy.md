@@ -1,5 +1,4 @@
 # Strategy
-
 Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
 
 ## Structure
@@ -15,19 +14,19 @@ Define a family of algorithms, encapsulate each one, and make them interchangeab
 - Maintains a reference to a Strategy object
 - May define an interface that lets Strategy access its data
 
-## Example
+## Flow
+- Strategy and Context interact to implement the chosen algorithm. A context may pass a ll data required by the algorithm to the strategy when the algorithm is called. Alternatively, the context can pass itself as an argument to Strategy operations. That lets the strategy call back on the contex t as required.
+- A context forwards requests from its clients to its strategy. Clients usually create and pass a ConcreteStrategy object to the context; thereafter, clients interact with the context exclusively. There is often a family of ConcreteStrategy classes for a client to choose from.
 
+## Example
 Link: [SimUDuck](./problem.md)
 
 ## Applicability
 - Many related classes differ only in their behavior. Strategies provide a way to configure a class with one of many behaviors.
 - Different variants of an algorithm. Strategies can be
-used when these variants are implemented as a class hierarchy of algorithms
-- Algorithm uses data that clients shouldn't know about. Use the Strategy
-pattern to avoid exposing complex, algorithm-specific data structures.
-- Class defines many behaviors, and these appear as multiple conditional
-statements in its operations. Instead of many conditionals, move related
-conditional branches into their own Strategy class.
+used when these variants are implemented as a class hierarchy of algorithms.
+- Algorithm uses data that clients shouldn't know about. Use the Strategy pattern to avoid exposing complex, algorithm-specific data structures.
+- Class defines many behaviors, and these appear as multiple conditional statements in its operations. Instead of many conditionals, move related conditional branches into their own Strategy class.
 
 ## Advantages vs Disavantages
 1. <b>Families of related algorithms</b>: Hierarchies of Strategy classes define a family of algorithms or behaviors for contexts to reuse. Inheritance can help factor out common functionality of the algorithms.
