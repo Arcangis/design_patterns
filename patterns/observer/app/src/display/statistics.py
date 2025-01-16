@@ -1,12 +1,10 @@
 from src.entity.statistics_metrics import StatisticsMetrics
 from src.models.display import DisplayElement
 from src.models.observer import Observer
-from src.models.subject import Subject
 
 class StatisticsDisplay(Observer, DisplayElement):
 
-    def __init__(self, subject: Subject) -> None:
-        self.subject = subject
+    def __init__(self) -> None:
         self.temperature = StatisticsMetrics()
         self.humidity  = StatisticsMetrics()
         self.pressure = StatisticsMetrics()

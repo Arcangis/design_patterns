@@ -1,11 +1,9 @@
 from src.models.display import DisplayElement
 from src.models.observer import Observer
-from src.models.subject import Subject
 
 class CurrentConditionsDisplay(Observer, DisplayElement):
 
-    def __init__(self, subject: Subject) -> None:
-        self.subject = subject
+    def __init__(self) -> None:
         self.temperature = None
         self.humidity  = None
         self.pressure = None

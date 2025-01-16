@@ -5,12 +5,11 @@ from src.weather_data import WeatherData
 
 def main():
     
-    weather = WeatherData()
-
-    current = CurrentConditionsDisplay(subject=weather)
-    statistics = StatisticsDisplay(subject=weather)
-    forecast = ForecastDisplay(subject=weather)
+    current = CurrentConditionsDisplay()
+    statistics = StatisticsDisplay()
+    forecast = ForecastDisplay()
     
+    weather = WeatherData()
     weather.register_observer(observer=current)
     weather.register_observer(observer=statistics)
     weather.register_observer(observer=forecast)
