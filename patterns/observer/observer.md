@@ -18,7 +18,7 @@ Define a one-to-many dependency between objects so that when one object changes 
 - Implements the Observer updating interface to keep its state consistent with the subject's.
 
 ## Flow
-![image](../../images/observer/structure.png)
+![image](../../images/observer/flow.png)
 - ConcreteSubject notifies its observers whenever a change occurs that could make its observers' state inconsistent with its own.
 - After being informed of a change in the concrete subject, a ConcreteObserver object may query the subject for information ConcreteObserver uses this information to reconcile its state with that of the subject. 
 - The Observer object that initiates the change request postpones its update until it gets a notification from the subject. Notify is not always called by the subject. It can be called by an observer or by another kind of object entirely. 
