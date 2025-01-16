@@ -18,12 +18,12 @@ class StatisticsMetrics:
         return "{:.2f}".format(self._average)
     
     def update(self, value: float):
-        if self._min is None or value < self._min:
+        if not self._min or value < self._min:
             self._min = value
 
-        if self._max is None or value > self._max:
+        if not self._max or value > self._max:
             self._max = value
 
-        if self._min is not None and self._max is not None:
+        if self._min and self._max:
             self._average = (self._min + self._max) / 2
     
