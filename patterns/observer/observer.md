@@ -24,7 +24,7 @@ Define a one-to-many dependency between objects so that when one object changes 
 - The Observer object that initiates the change request postpones its update until it gets a notification from the subject. Notify is not always called by the subject. It can be called by an observer or by another kind of object entirely. 
 
 ## Example
-Link: [SimUDuck](./problem.md)
+Link: [Weather-O-Rama](./problem.md)
 
 ## Applicability
 - When an abstraction has two aspects, one dependent on the other. Encapsulating these aspects in separate objects lets you vary and reuse them independently.
