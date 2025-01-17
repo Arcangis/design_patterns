@@ -9,7 +9,7 @@ Further, this is an expandable weather station. Weather-ORama wants to release a
 ![image](../../images/observer/problem-1.png)
 2. We need to implement three display elements that use the weather data: a current conditions display, a statistics display and a forecast display. These displays must be updated each time WeatherData has new measurements.
 ![image](../../images/observer/problem-2.png)
-2. The system must be expandable—other developers can create new custom display elements and users can add or remove as many display elements as they want to the application. Currently, we know about only the initial three display types (current conditions, statistics and forecast).
+3. The system must be expandable—other developers can create new custom display elements and users can add or remove as many display elements as they want to the application. Currently, we know about only the initial three display types (current conditions, statistics and forecast).
 ![image](../../images/observer/problem-3.png)
 
 ## Design Principles

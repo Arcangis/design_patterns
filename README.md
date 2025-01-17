@@ -18,3 +18,9 @@ Define a one-to-many dependency between objects so that when one object changes 
 
 ![image](./images/observer/structure.png)
 Link: [Observer](./patterns/observer/observer.md)
+
+### 3. Decorator
+Attach additional responsibilities to an object dynamicall y.Decorators provide a flexible alternative to subclassing for extending functionality.
+
+![image](./images/decorator/structure.png)
+Link: [decorator](./patterns/decorator/decorator.md)
