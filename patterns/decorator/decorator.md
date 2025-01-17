@@ -17,7 +17,7 @@ Attach additional responsibilities to an object dynamicall y.Decorators provide 
 - Decorator forwards requests to its Component object. It may optionally perform additional operations before and after forwarding the request.
 
 ## Example
-Link: [Weather-O-Rama](./problem.md)
+Link: [Starbuzz](./problem.md)
 
 ## Applicability
 - Add responsibilities to individual objects dynamically and transparently, that is, without affecting other objects.
